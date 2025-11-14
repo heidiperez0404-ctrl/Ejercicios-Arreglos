@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class EjemploD
+{
+	public static void main(String args[])
+	{
+		int arreglito [] = new int [5];
+
+	Scanner sc = new Scanner(System.in);
+	
+	for(int c = 0; c < 5; c++)
+	{
+		System.out.println("Introduce un número :");
+		arreglito[c] = sc.nextInt();
+	}
+	for(int d = 0; d < 5; d++)
+	{
+		System.out.println(arreglito[d] + " ");
+
+	}
+	sc.close();
+	}
+}
