@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class ArrayMes
+{
+	public static void main(String args[])
+	{
+		String mes [] = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
+		int dias [] = new int [12];
+			dias [0] = 31;
+			dias [1] = 28;
+			dias [2] = 31;
+			dias [3] = 30;
+			dias [4] = 31;
+			dias [5] = 30;
+			dias [6] = 31;
+			dias [7] = 31;
+			dias [8] = 30;
+			dias [9] = 31;
+			dias [10] = 30;
+			dias [11] = 31;
+
+	Scanner ar = new Scanner(System.in);
+
+	for(int m = 0; m < 12; m++)
+	{
+		System.out.println("El mes " + mes[m] + " tiene "+ dias[m] + " días");
+		dias[m] = ar.nextInt();
+	}
+	for(int d = 0; d < 12; d++)
+	{
+		System.out.println(mes[d] + " ");
+		dias[d] = ar.nextInt();
+	}
+
+		ar.close();
+	}
+}
